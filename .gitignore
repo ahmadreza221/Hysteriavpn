@@ -1,0 +1,4 @@
+hysteria-admin-panel/frontend/node_modules
+hysteria-admin-panel/backend/node_modules
+hysteria-admin-panel/frontend/dist
+.env
