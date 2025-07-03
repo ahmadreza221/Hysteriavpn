@@ -53,12 +53,14 @@ function auth(req, res, next) {
 }
 
 app.post('/api/login', (req, res) => {
-  const { password } = req.body;
-  if (password === process.env.ADMIN_PASSWORD) {
+  const { username, password } = req.body;
+  const adminUser = process.env.ADMIN_USERNAME || 'admin';
+  const adminPass = process.env.ADMIN_PASSWORD || 'Ahmad2016';
+  if (username === adminUser && password === adminPass) {
     req.session.loggedIn = true;
     return res.json({ ok: true });
   }
-  res.status(401).json({ error: 'Invalid password' });
+  res.status(401).json({ error: 'Invalid credentials' });
 });
 
 app.use('/api', auth);
