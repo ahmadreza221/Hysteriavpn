@@ -29,3 +29,4 @@ docker compose up -d --build
 IP=$(curl -s https://api.ipify.org || echo "your-server-ip")
 
 echo "Admin panel running on http://$IP:3000"
+echo "Default login -> username: admin password: Ahmad2016"

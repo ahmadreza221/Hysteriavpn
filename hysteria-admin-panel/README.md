@@ -9,6 +9,7 @@ This project provides a simple admin panel to manage Hysteria VPN clients.
 - `setup.sh` – installer script.
 
 ## Quick Start
-1. Copy `.env.example` to `.env` and fill your domain and admin password.
+1. Copy `.env.example` to `.env` and fill your domain.
 2. Run `./setup.sh` or `docker compose up -d --build`.
 3. Access the panel at `http://<your-ip>:3000`.
+4. Default login is **admin** / **Ahmad2016**.
